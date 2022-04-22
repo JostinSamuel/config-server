@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  security:
+    user:
+      name: nttdata
+      password: nttd4t4
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JostinSamuel/config-server.git
+          username: nttdata
+          password: nttdata
+          search-paths: /
+          default-label: "main"
+
+#si el repositorio es privado colocar username y password
+#search-paths para indicar la raiz del proyecto
+#default-label: "main" para especificar la rama pero es opcional ya que por defecto buscara la principal
