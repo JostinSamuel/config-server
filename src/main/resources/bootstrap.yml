@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/JostinSamuel/config-server.git
+          uri: https://github.com/JostinSamuel/config.git
           username: nttdata
           password: nttdata
           search-paths: /
